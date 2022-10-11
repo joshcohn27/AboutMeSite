@@ -1,0 +1,202 @@
+#myHeader {
+	padding: 40px;
+	background: #8C3CEF;
+	text-align: center;
+	border: solid;
+	border-color: #FFFB17;
+	color: #EBE900;
+	font-size: 54pt;
+}
+
+h2 {
+	padding: 25px;
+	margin-left: 1em;
+	margin-right: 1em;
+	padding-top: 1.5em;
+}
+
+p {
+	font-size: 14pt;
+	font-weight: normal;
+	line-height: normal;
+	margin-left: 4em;
+	margin-right: 4em;
+	padding-bottom: 1.5em;
+}
+
+.contact {
+	margin-top: 5em;
+	border: solid;
+	border-color: black;
+	padding: 1em;
+}
+
+a:link {
+	color: white;
+}
+
+
+a:visited {
+	color: white;
+}
+
+
+a:hover {
+	color: yellow;
+}
+
+
+a:active {
+	color: black;
+}
+
+
+body {
+	background: #46009E;
+	margin: 2em;
+	font-family: "Times New Roman", Times, serif;
+	color: #EBE900;
+}
+
+.right {
+	float: right;
+	padding: 0;
+	margin: 0;
+	
+}
+
+.left {
+	float: left;
+	padding-right: 1.5em;
+	margin-left: 4em;
+}
+
+div {
+	margin: 2em;
+	padding-bottom: 2em;
+}
+
+li {
+	margin-left: 2em;
+	font-size: 11pt;
+	padding: 0.5em;
+}
+
+p.lists {
+	font-size: 11pt;
+	padding: 0;
+	margin: 0;
+}
+
+.copyright {
+	color: gray;
+	font-size: 85%;
+	text-align: right;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+ul.nav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+li.nav {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 120%;
+}
+
+li a:hover:not(.active) {
+	background-color: #111;
+}
+
+.active {
+	background-color: #9E9B00;
+	color: white;
+}
+
+h3 {
+	margin-left: 5em;
+	font-weight: normal;
+	margin-bottom: 0;
+}
+
+h5 {
+	margin-left: 7.2em;
+	font-weight: normal;
+	margin-top: 0;
+	color: #9E9B00;
+}
+
+.resumeList {
+	margin-left: 5em;
+}
+
+#proj {
+	font-size: 14pt;
+	margin-left: 7em;
+}
+
+a.projs {
+	margin-left: 7em;
+}
+
+h2.edu {
+	font-weight: normal;
+}
+
+.rightEDU {
+	float: right;
+	padding-left: 1em;
+	margin: 0;
+}
+
+.leftEDU {
+	float: left;
+	padding-right: 1em;
+	margin: 0;
+}
+
+.topSpace {
+	margin-top: 5em;
+}
+
+figcaption {
+	text-align: center;
+	font-size: 75%;
+	color: gray;
+}
+
+div.l {
+	text-align: left;
+}
+
+.r {
+	text-align: right;
+}
+
+.flexContainer {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.rightFood {
+	padding: 5px;
+}
