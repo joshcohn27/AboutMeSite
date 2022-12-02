@@ -202,3 +202,20 @@ div.l {
 .rightFood {
 	padding: 5px;
 }
+
+@media screen and (max-width: 900px) {
+	ul.nav {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: #333;
+		display: flex;
+		justify-content: space-evenly;
+		flex-direction: column;
+	}
+
+	li.nav {
+		float: none;
+	}
+}
