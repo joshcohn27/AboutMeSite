@@ -1,0 +1,331 @@
+* {
+	background-color: #3137FD;
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+a:link {
+	color: white;
+}
+
+
+a:visited {
+	color: white;
+}
+
+
+a:hover {
+	color: #B08E00;
+}
+
+
+a:active {
+	color: #3137FD;
+}
+
+ul.nav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: nowrap;
+}
+
+li.nav {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 25px 25px;
+	text-decoration: none;
+	font-size: 120%;
+	background-color: #333;
+}
+
+li a:hover:not(.active) {
+	background-color: #111;
+}
+
+.active {
+	background-color: #FCD530;
+	color: white;
+}
+
+
+
+@media screen and (max-width: 900px) {
+	ul.nav {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: #333;
+		display: flex;
+		justify-content: space-evenly;
+		flex-direction: column;
+	}
+
+	li.nav {
+		float: none;
+	}
+
+	.center {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 2em;
+		max-width: 85%;
+		height: auto;
+	}	
+
+	p {
+		text-align: center;
+	}
+}
+
+.center {
+	margin-left: auto;
+	margin-right: auto;
+	padding: 2em;
+	max-width: 85%;
+	height: auto;
+}	
+
+main {
+	margin: 1em;
+	padding: 2em;
+}
+
+p {
+	padding-bottom: 2em;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3 {
+	color: #FCD530;
+	font-family: "Times New Roman", Times, serif;
+}
+
+h1 {
+	margin-left: 0.5em;
+}
+
+.intro {
+	margin-left: 1em;
+}
+
+li, li a {
+	font-family: "Times New Roman", Times, serif;
+}
+
+.end {
+	padding: 0;
+	margin: 0.5em;
+}
+
+#myHeader {
+	padding: 0;
+	margin: 0;
+	padding-top: 1em;
+	font-size: 300%;
+	text-align: center;
+}
+
+.img1 {
+	grid-area: img1;
+}
+
+.img2 {
+	grid-area: img2;
+}
+
+div.nav {
+	grid-area: nav;
+}
+
+.header {
+	grid-area: header;
+}
+
+.main {
+	grid-area: main;
+}
+
+.main2 {
+	grid-area: main2;
+}
+
+.footer {
+	grid-area: footer;
+}
+
+.main1 {
+	grid-area: main1;
+}
+
+.main3 {
+	grid-area: main3;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: auto;
+	grid-gap: 1em;
+	grid-template-areas: 
+		'nav'
+		'header'
+		'img1'
+		'main'
+		'main2'
+		'img2'
+		'footer';
+	margin: 1em;
+}
+
+
+.index-grid {
+	display: grid;
+	grid-template-columns: auto;
+	grid-gap: 1em;	
+	grid-template-areas: 
+		'nav'
+		'header'
+		'main'
+		'img1';
+	margin: 1em;
+
+}
+
+.edu-grid {
+	display: grid;
+	grid-template-columns: auto;
+	grid-gap: 1em;	
+	grid-template-areas: 
+		'nav'
+		'header'
+		'main1'
+		'img1'
+		'main2'
+		'img2'
+		'main3'
+		'footer';
+	margin: 1em;
+}
+
+.norm-container {
+	display: grid;
+	grid-template-columns: auto;
+	grid-gap: 1em;	
+	grid-template-areas: 
+		'nav'
+		'header'
+		'main1'
+		'img1'
+		'main2'
+		'main3';
+	margin: 1em;
+}
+
+@media only screen and (min-width: 900px) {
+	.index-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 1em;
+		grid-template-areas: 
+			'nav nav'
+			'header header'
+			'main img1';
+	}
+
+	.norm-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 1em;	
+		grid-template-areas: 
+			'nav nav'
+			'header header'
+			'main1 img1'
+			'main2 img1'
+			'main3 main3';
+	}
+
+	.edu-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 1em;
+		grid-template-areas: 
+			'nav nav'
+			'header header'
+			'img1 main1'
+			'main2 img2'
+			'main3 main3'
+			'footer footer';
+	}
+}
+
+@media only screen and (min-width: 1100px) {
+
+	.grid-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 1em;
+		grid-template-areas: 
+			'nav nav'
+			'header header'
+			'img1 img2'
+			'main main'
+			'main2 main2'
+			'footer footer';
+	}
+
+	
+}
+
+@media only screen and (min-width: 1200px) {
+	.grid-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 1em;
+		grid-template-areas: 
+			'nav nav'
+			'header header'
+			'img1 main'
+			'img1 main'
+			'img2 main2'
+			'footer footer';
+	}
+
+	.edu-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 1em;
+		grid-template-areas: 
+			'nav nav'
+			'header header'
+			'img1 main1'
+			'main2 img2'
+			'main3 img2'
+			'footer footer';
+	}
+}
+
+
+::-moz-selection {
+	background: black;
+	color: white; 
+}
+  
+::selection {
+	background: black;
+	color: white;
+}
+
+body {
+	margin: 10px;
+}
