@@ -203,6 +203,19 @@ div.l {
 	padding: 5px;
 }
 
+.header {
+	grid-area: header;
+}
+
+.main {
+	grid-area: main;
+}
+
+.footer {
+	grid-area: footer;
+}
+
+
 @media screen and (max-width: 900px) {
 	ul.nav {
 		list-style-type: none;
@@ -217,5 +230,16 @@ div.l {
 
 	li.nav {
 		float: none;
+	}
+
+	.grid-container {
+		display: grid;
+		grid-template-columns: auto;
+		grid-gap: 1em;
+		grid-template-areas: 
+			'header'
+			'main'
+			'footer';
+		margin: 1em;
 	}
 }
