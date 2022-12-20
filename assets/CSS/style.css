@@ -32,6 +32,16 @@ body {
     margin: auto;
 }
 
+.img5 {
+    grid-area: img5;
+    margin: auto;
+}
+
+.img6 {
+    grid-area: img6;
+    margin: auto;
+}
+
 .header {
     grid-area: header;
     padding-top: 2em;
@@ -111,6 +121,26 @@ body {
         'footer'
 }
 
+.food-container {
+    display: grid;
+	grid-template-columns: auto;
+	grid-gap: 1em;
+    row-gap: 2em;
+	grid-template-areas: 
+        'nav'
+        'header'
+        'img1'
+        'img2'
+        'img3'
+        'img4'
+        'main1'
+        'img5'
+        'main2'
+        'img6'
+        'main3'
+        'footer'
+}
+
 
 ul.nav {
     list-style-type: none;
@@ -164,4 +194,9 @@ a:hover {
   
 a:active {
     color: yellow;
+}
+
+figcaption {
+    font-size: 75%;
+    text-align: center;
 }
