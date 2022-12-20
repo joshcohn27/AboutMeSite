@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    background-color: lightskyblue;
 }
 
 #myHeader {
@@ -64,7 +65,9 @@ body {
 	border-color: black;
 	padding: 1em;
     box-shadow: 2px 2px;
+    background-color: rgb(97, 182, 235);
 }
+
 
 .grid-container {
     display: grid;
@@ -82,6 +85,8 @@ body {
 		'footer';
 }
 
+
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -95,6 +100,9 @@ ul {
   
 li.nav {
     float: left;
+    border-right-style: solid;
+    border-color: white;
+    border-right-width: 1px;
 }
   
 li a {
@@ -110,6 +118,8 @@ li a:hover:not(.active) {
 }
   
 .active {
-    background-color: #04AA6D;
+    /* background-color: #04AA6D; */
+    background-color: rgb(97, 182, 235);
+    color: black;
 }
 
