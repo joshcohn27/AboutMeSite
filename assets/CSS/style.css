@@ -97,6 +97,20 @@ body {
         'footer'
 }
 
+.edu-container {
+    display: grid;
+	grid-template-columns: auto;
+	grid-gap: 1em;
+	grid-template-areas: 
+        'nav'
+        'header'
+        'img1'
+        'main1'
+        'img2'
+        'main2'
+        'footer'
+}
+
 
 ul.nav {
     list-style-type: none;
