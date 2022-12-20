@@ -1,8 +1,3 @@
-/* * {
-    margin: 0;
-    padding: 0;
-} */
-
 body {
     margin: 0;
 }
@@ -98,7 +93,7 @@ ul {
     width: 100%;
 }
   
-li {
+li.nav {
     float: left;
 }
   
@@ -117,3 +112,4 @@ li a:hover:not(.active) {
 .active {
     background-color: #04AA6D;
 }
+
