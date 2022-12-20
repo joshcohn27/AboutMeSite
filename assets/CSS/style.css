@@ -85,9 +85,20 @@ body {
 		'footer';
 }
 
+.resume-container {
+    display: grid;
+	grid-template-columns: auto;
+	grid-gap: 1em;
+	grid-template-areas: 
+        'nav'
+        'header'
+        'img1'
+        'main1'
+        'footer'
+}
 
 
-ul {
+ul.nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -115,6 +126,7 @@ li a {
   
 li a:hover:not(.active) {
     background-color: #111;
+    color: white;
 }
   
 .active {
@@ -123,3 +135,19 @@ li a:hover:not(.active) {
     color: black;
 }
 
+.copyright {
+    font-size: 80%;
+    color: darkblue;
+}
+
+a:link {
+    color: darkblue;
+}
+
+a:hover {
+    color: red;
+}
+  
+a:active {
+    color: yellow;
+}
