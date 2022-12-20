@@ -1,0 +1,69 @@
+#myHeader {
+    font-size: 44pt;
+}
+
+.img1 {
+    grid-area: img1;
+}
+
+.navi {
+    grid-area: nav;
+}
+
+.img2 {
+    grid-area: img2;
+}
+
+.img3 {
+    grid-area: img3;
+}
+
+.img4 {
+    grid-area: img4;
+}
+
+.header {
+    grid-area: header;
+}
+
+.main2 {
+    grid-area: main2;
+}
+
+.main3 {
+    grid-area: main3;
+}
+
+.main1 {
+    grid-area: main1;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.contact {
+    margin-top: 5em;
+	border: solid;
+	border-color: black;
+	padding: 1em;
+    box-shadow: 2px 2px;
+}
+
+.grid-container {
+    display: grid;
+	grid-template-columns: auto;
+	grid-gap: 1em;
+	grid-template-areas: 
+		'nav'
+		'header'
+		'img1'
+		'main1'
+		'img2'
+		'main2'
+        'img3'
+        'main3'        
+		'footer';
+	margin: 1em;
+}
+
