@@ -1,11 +1,21 @@
 body {
     margin: 0;
     background-color: lightskyblue;
+    text-align: center;
+}
+
+ul {
+    text-align: left;
 }
 
 #myHeader {
     font-size: 44pt;
     text-align: center;
+}
+
+.myhead {
+    grid-area: myhead;
+    margin: auto;
 }
 
 .img1 {
@@ -85,6 +95,7 @@ body {
 	grid-gap: 1em;
 	grid-template-areas: 
 		'nav'
+        'myhead'
 		'header'
 		'img1'
 		'main1'
@@ -184,19 +195,68 @@ li a:hover:not(.active) {
     color: darkblue;
 }
 
-a:link {
-    color: darkblue;
-}
-
-a:hover {
-    color: red;
-}
-  
-a:active {
-    color: yellow;
-}
-
 figcaption {
     font-size: 75%;
     text-align: center;
+}
+
+@media screen and (max-width: 430px) {
+    ul.nav {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: #333;
+		display: flex;
+		justify-content: space-evenly;
+		flex-direction: column;
+        position: static;
+	}
+
+	li.nav {
+		float: none;
+	}
+}
+
+
+@media screen and (max-width: 620px) {
+    
+    img {
+        height: auto;
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    
+    .resume-container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-gap: 1em;
+        grid-template-areas: 
+            'nav nav'
+            'header img1'
+            'main1 main1'
+            'footer footer';
+        text-align: left;
+    }
+
+    img {
+        margin-top: 2em;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-gap: 1em;
+        grid-template-areas: 
+            'nav nav'
+            'myhead myhead'
+            'header img1'
+            'img2 main1'
+            'main2 img3'
+            'main3 main3'
+            'footer footer';
+        text-align: left;
+    }
 }
