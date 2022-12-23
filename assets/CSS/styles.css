@@ -17,6 +17,8 @@ ul {
 	padding: 1em;
     box-shadow: 2px 2px;
     background-color: rgb(97, 182, 235);
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .myhead {
@@ -315,3 +317,8 @@ figcaption {
     }
 }
 
+@media screen and (max-width: 300px){
+    * {
+        display: none;
+    }
+}
