@@ -228,6 +228,8 @@ figcaption {
 
 	li.nav {
 		float: none;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
 	}
 }
 
